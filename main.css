@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', 'Montserrat',sans-serif;
+    background-color: #b6b5f0;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+
+}
+.container{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+    width: 100vw;
+    grid-gap: 20px;
+}
+header{
+    padding: 10px 20px;  
+}
+h2{
+    letter-spacing: 3px;
+}
+.options{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.dogBreed{
+    width: 90%;
+}
+.slideShow{
+    margin-top: 20px;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dogBreedImg{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.slide{
+    height: 100%;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0;
+    transform: scale(1);
+    transition: all .9s ease-in-out;
+}
+.slide:nth-last-child(2){
+    opacity: 1;
+    transform: scale(1.08);
+}
